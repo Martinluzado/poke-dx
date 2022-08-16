@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
 import { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Boton from "../Componentes/Boton/Boton";
 import Minitarjetas from "../Componentes/Minitarjetas/Minitarjetas";
 import { PokemonInfo } from "../tarjetasInfo/PokemonInfo";
@@ -46,7 +46,15 @@ export function Home() {
       <div>
         <Minitarjetas texto={texto} listaPokemones={listaPokemones} />
       </div>
-      <BrowserRouter />
+      
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<aaaa />}>
+          <Route index element={<aaaaa/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
       
     </div>
   )
