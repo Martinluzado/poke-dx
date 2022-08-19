@@ -1,5 +1,5 @@
 /** @format */
-
+import { Link } from "react-router-dom";
 import "./minitarjetas.css";
 
 const Minitarjetas = ({ texto,listaPokemones }) => {
@@ -12,8 +12,11 @@ let filtred = listaPokemones.filter(function(pokemon) {
 
 
   return (
+   
     <div className='CuadriculaTarjetas'>
+      
       {filtred.map((pokemon) => (
+        <Link style={{textDecoration: "none"}} to={`/${pokemon.Nombre}`}>
         <div
           className='Imgminitarjetas'
           style={{
@@ -32,8 +35,11 @@ let filtred = listaPokemones.filter(function(pokemon) {
           </div>
           <h2 className='H2Tarjetas'>{pokemon.Nombre}</h2>
         </div>
+        </Link>
       ))}
     </div>
+    
+  
   );
 };
 

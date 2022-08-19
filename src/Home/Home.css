@@ -33,16 +33,7 @@ h1 {
 }
 
 .Imputheader {
-  width: 100%;
-  text-indent: 50px;
-}
-
-.imgLupa {
-  position: absolute;
-  height: 20px;
-  left: 280px;
-  top: 193px;
-  opacity: 80%;
+  width: 50%;
 }
 
 .btn-arrow-filter {
@@ -53,11 +44,12 @@ h1 {
   height: 50px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+ justify-content: center;
   gap: 10px;
   position: absolute;
   right: 80px;
   top: 70px;
+  align-items: center;
 }
 
 .btn-arrow-filter p {

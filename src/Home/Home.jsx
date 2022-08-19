@@ -1,17 +1,19 @@
 /** @format */
 import React from "react";
 import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Boton from "../Componentes/Boton/Boton";
 import Minitarjetas from "../Componentes/Minitarjetas/Minitarjetas";
 import { PokemonInfo } from "../tarjetasInfo/PokemonInfo";
 import "./Home.css";
 export function Home() {
+  
   const [listaPokemones, setListaPokemones] = useState(PokemonInfo);
   const [texto, setTexto] = useState("");
   const manejarInput = (e) => {
+    
     setTexto(e.target.value);
   };
+  
 
   return (
     <div>
@@ -34,27 +36,18 @@ export function Home() {
 
       <nav>
         <div className='PascalSearch'>
-          <img class='imgLupa' src={"Images/Lupa.png"} alt='Lupa' />
           <input
+            autoFocus
             className='Imputheader'
-            type='text'
-            placeholder='Search...'
+            type='text' 
+            placeholder='🔍︎ Search...'
             onChange={manejarInput}
           />
         </div>
       </nav>
       <div>
         <Minitarjetas texto={texto} listaPokemones={listaPokemones} />
-      </div>
-      
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<aaaa />}>
-          <Route index element={<aaaaa/>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    
+      </div>  
       
     </div>
   )

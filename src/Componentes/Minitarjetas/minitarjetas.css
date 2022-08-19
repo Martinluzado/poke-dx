@@ -6,6 +6,7 @@
 }
 
 .ButtonTarjetas {
+
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border: none;
@@ -22,10 +23,12 @@ p {
   height: 180px;
 }
 .H2Tarjetas {
+  
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255);
   font-size: x-large;
+  text-decoration: none;
 }
 
 .CuadriculaTarjetas {
