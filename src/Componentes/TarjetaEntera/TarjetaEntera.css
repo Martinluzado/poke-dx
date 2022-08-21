@@ -19,7 +19,14 @@
 .NombreTarjetaEntera {
   color: white;
   position: absolute;
-  left: 35%;
+  left: 36%;
+  top: 0%;
+  font-size: 22px;
+}
+.Flecha{
+  color: white;
+  position: absolute;
+  left: 34%;
   top: 0%;
   font-size: 22px;
 }

@@ -23,9 +23,11 @@ const TarjetaEntera = ({ listaPokemones }) => {
         <img className='ImgFondo' src='Images/Pokeball.png' />
         <header>
           <Link to='/Home'>
-            <h2 className='NombreTarjetaEntera'>⬅ {Pokemon.Nombre}</h2>
+            <h1 className='Flecha'>⬅</h1>
+            </Link>
+            <h2 className='NombreTarjetaEntera'> {Pokemon.Nombre}</h2>
             <h5 className='H5deTarjetaEntera'>{Pokemon.Numero}</h5>
-          </Link>
+          
         </header>
       </div>
 
